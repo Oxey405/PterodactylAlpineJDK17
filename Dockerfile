@@ -7,5 +7,5 @@ RUN adduser -S container -h /home/container
 USER container
 ENV USER=container HOME=/home/container
 
-COPY ./../entrypoint.sh /entrypoint.sh
-CMD [ "/bin/bash", "/entrypoint.sh" ]
+COPY ./entrypoint.sh /entrypoint.sh
+CMD [ "/bin/sh", "/entrypoint.sh" ]
